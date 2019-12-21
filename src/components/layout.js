@@ -7,13 +7,12 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
-
-import Header from "./header"
+import {useStaticQuery, graphql} from "gatsby"
 import "./layout.css"
+import HeaderMenu from "@howtocodewell/header-menu";
 
-const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
+const Layout = ({children}) => {
+    const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
         siteMetadata {
@@ -21,32 +20,29 @@ const Layout = ({ children }) => {
         }
       }
     }
-  `)
+  `);
 
-  return (
-    <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0px 1.0875rem 1.45rem`,
-          paddingTop: 0,
-        }}
-      >
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
-      </div>
-    </>
-  )
-}
+    return (
+        <>
+            <HeaderMenu/>
+            <div className="container mx-auto px-4">
+                <main>{children}</main>
+                <footer className="flex justify-between border-solid border-t-2 mt-8 pt-4 border-gray-400">
+                    <div className="mr-2">
+                        <a href="https://github.com/howToCodeWell/wiki" target={'_blank'}
+                           rel="noopener noreferrer">Edit</a>
+                    </div>
+                    <div className="m2">
+                        <a href="https://howtocodewell.net">How To Code Well</a>
+                    </div>
+                </footer>
+            </div>
+        </>
+    )
+};
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
+    children: PropTypes.node.isRequired,
+};
 
 export default Layout

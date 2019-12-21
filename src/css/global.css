@@ -1,0 +1,41 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+body{
+    padding:0;
+    margin:0;
+    font-family: Arial, serif;
+    line-height: 2.2em;
+}
+a{
+    color:hotpink;
+}
+a:hover{
+    text-decoration: underline;
+}
+h1{
+    font-size:2em;
+    margin-bottom:0.5em;
+}
+h2{
+    font-size:1.5em;
+    margin:0.5em 0;
+    border-bottom:1px solid #CCC;
+}
+ul{
+    padding-left:1em;
+    list-style: disc;
+}
+
+header.bg{
+    background-color: theme('colors.howtocodewell');
+}
+header a:hover{
+    color:hotpink;
+}
+.text-white{
+    color:#FFF;
+}
