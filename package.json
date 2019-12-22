@@ -5,9 +5,9 @@
   "version": "0.1.0",
   "author": "@howtocodewell",
   "dependencies": {
-    "@howtocodewell/footer-menu": "^1.0.1",
+    "@howtocodewell/footer-menu": "^1.0.3",
     "@howtocodewell/header-menu": "^1.0.18",
-    "@howtocodewell/ui-library": "^1.0.0",
+    "@howtocodewell/ui-library": "^1.0.4",
     "gatsby": "^2.18.16",
     "gatsby-image": "^2.2.37",
     "gatsby-plugin-manifest": "^2.2.34",
