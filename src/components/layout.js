@@ -26,15 +26,16 @@ const Layout = ({children}) => {
     return (
         <>
             <HeaderMenu/>
-            <div className="content container mx-auto px-4">
+
+            <div className="page-container container mx-auto px-4">
                 <main>{children}</main>
 
 
             </div>
 
-            <div className='footer'>
+            <div className='footer mt-4 pb-2'>
                 <FooterMenu/>
-                <footer className=" pt-2">
+                <footer className="pt-2">
                     <div className="container mx-auto px-4">
                         <div className='flex justify-between'>
                             <div className="mr-2">
