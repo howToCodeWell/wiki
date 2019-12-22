@@ -25,29 +25,28 @@ const Layout = ({children}) => {
 
     return (
         <>
-            <HeaderMenu/>
+            <div className='page-container'>
+                <HeaderMenu/>
 
-            <div className="page-container container mx-auto px-4">
-                <main>{children}</main>
-
-
-            </div>
-
-            <div className='footer mt-4 pb-2'>
-                <FooterMenu/>
-                <footer className="pt-2">
-                    <div className="container mx-auto px-4">
-                        <div className='flex justify-between'>
-                            <div className="mr-2">
-                                <a href="https://github.com/howToCodeWell/wiki" target={'_blank'}
-                                   rel="noopener noreferrer">Edit</a>
-                            </div>
-                            <div className="m2">
-                                <a href="https://howtocodewell.net">How To Code Well</a>
+                <div className="main-container container mx-auto px-4">
+                    <main>{children}</main>
+                </div>
+                <div className='footer'>
+                    <FooterMenu/>
+                    <footer className="pt-2">
+                        <div className="container mx-auto px-4">
+                            <div className='flex justify-between'>
+                                <div className="mr-2">
+                                    <a href="https://github.com/howToCodeWell/wiki" target={'_blank'}
+                                       rel="noopener noreferrer">Edit</a>
+                                </div>
+                                <div className="m2">
+                                    <a href="https://howtocodewell.net">How To Code Well</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </footer>
+                    </footer>
+                </div>
             </div>
         </>
     )

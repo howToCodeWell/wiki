@@ -7,7 +7,7 @@
   "dependencies": {
     "@howtocodewell/footer-menu": "^1.0.3",
     "@howtocodewell/header-menu": "^1.0.18",
-    "@howtocodewell/ui-library": "^1.0.5",
+    "@howtocodewell/ui-library": "^1.0.9",
     "gatsby": "^2.18.16",
     "gatsby-image": "^2.2.37",
     "gatsby-plugin-manifest": "^2.2.34",
