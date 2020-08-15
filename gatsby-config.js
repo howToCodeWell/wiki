@@ -1,7 +1,7 @@
 module.exports = {
     siteMetadata: {
-        title: `How To Code Well Wiki`,
-        description: `The Wiki for How To Code Well`,
+        title: `Wiki - How To Code Well`,
+        description: `The Wiki for How To Code Well platform`,
         author: `@howtocodewell`,
     },
     plugins: [
