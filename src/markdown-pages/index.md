@@ -3,6 +3,7 @@ path: "/"
 date: "2019-12-21"
 ---
 # Wiki
+This is the wiki for [How To Code Well](https://howtocodewell.net)
 
 - [Code of conduct](https://codeofconduct.howtocodewell.net)
 - [Code challenges](https://codechallenges.howtocodewell.net)
